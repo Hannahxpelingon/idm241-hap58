@@ -15,6 +15,14 @@ main {
     padding: 20px;
 }
 
+section {
+    text-align: center;
+}
+
+section > * {
+    margin: 10px;
+}
+
 a {
     display: block;
 }
