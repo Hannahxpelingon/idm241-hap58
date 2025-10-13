@@ -1,0 +1,152 @@
+@font-face {
+    font-family: Satoshi;
+    src: url('/alpha/fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('/alpha/fonts/Satoshi-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+   @font-face {
+    font-family: Satoshi;
+    src: url('/alpha/fonts/Satoshi-Medium.woff2') format('woff2'),
+         url('/alpha/fonts/Satoshi-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+   }
+
+   @font-face {
+    font-family: Satoshi;
+    src: url('/alpha/fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('/alpha/fonts/Satoshi-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+   }
+
+
+body {
+    font-family: Satoshi, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FEFEFE;
+    color: #1E1A14;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* logo animation */
+.build-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    padding: 12px 5px;
+    margin: auto;
+}
+
+.build-container:hover {
+     background-color: #F4F4F3;
+
+     .logo {
+           animation: bounceUp 0.8s ease-out;
+      cursor: pointer;
+     }
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.text-container {
+    width: 250px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+@keyframes bounceUp {
+    0% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px) rotate(-10deg);
+    }
+
+    55% {
+        transform: translateY(-10px) rotate(-6deg);
+    }
+
+    70% {
+        transform: translateY(-4px) rotate(-2deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+
+
+
+
+
+/* from prev */
+
+header {
+    background-color: #D08B2F;
+    color: #1E1A14;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.top-container {
+    text-align: center;
+}
+
+.description-container{
+background-color: #E3B053;
+max-width: 700px;
+border-radius: 15px;
+padding: 0.5em 2em;
+margin: 20px auto;
+
+}
+
+a {
+    display: block;
+    color: #1E1A14;
+}
+
+p {
+    font-weight: bold;
+}
+
+#none {
+    font-weight: 100;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.gif-container {
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 650px;
+}
+
+footer {
+    background-color: #1E1A14;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
