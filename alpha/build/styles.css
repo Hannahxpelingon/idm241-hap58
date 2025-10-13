@@ -31,8 +31,6 @@ body {
     padding: 0;
 }
 
-
-/* logo animation */
 .build-container {
     display: flex;
     flex-direction: row;
@@ -124,8 +122,6 @@ body {
         transform: translateY(0) rotate(0);
     }
 } 
-
-
 
 
 /* from prev */
