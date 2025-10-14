@@ -168,6 +168,14 @@ p {
     font-weight: bold;
 }
 
+li {
+    margin-bottom: 5px;
+}
+
+ul {
+    margin-bottom: 15px;
+}
+
 #none {
     font-weight: 100;
 }
