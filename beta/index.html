@@ -12,29 +12,43 @@
     </header>
     <main>
         <div class="top-container">
-             <h1>Intuit Mailchimp Button Microinteraction</h1>
-             <a href="https://mailchimp.com">Mailchimp website</a>
+            <!-- <img src="ikea.png" alt="IKEA Logo"> -->
+             <h1>IKEA Card Carousel</h1>
+             <a href="https://www.ikea.com">IKEA Website</a>
         </div>
     
         <div class="description-container">
               <h2>Triggers</h2>
-                <p>Intuit Mailchimp logo</p>
+                <p>Slider Card</p>
                 <ul>
                     <li>Hover On</li>
                     <li>Hover Off</li>
                     <li>On Click</li>
                 </ul>
+                <p>Left Chevron Button</p>
+                <ul>
+                    <li>Hover On</li>
+                    <li>Hover Off</li>
+                    <li>On Click</li>
+                </ul>
+                <p>Right Chevron Button</p>
+                <ul>
+                    <li>Hover On</li>
+                    <li>Hover Off</li>
+                    <li>On Click</li>
+                </ul>
+                <p>Carousel Scroll Bar</p>
+                <ul>
+                    <li>On drag</li>
+                </ul>
         </div>
       
         <div class="description-container">
             <h2>Rules</h2>
-            <p>Intuit Mailchimp logo</p>
+            <p>Slider Card</p>
                 <ul>
                     <li>Hover On
                         <ul>
-                            <li>Light gray box surrounding the logo appears</li>
-                            <li>Logo bounces up and down once</li>
-                            <li>As the logo bounces, the monkey opens its eyes then returns to the winking (original position)</li>
                             <li>Cursor changes to finger</li>
                         </ul>
                     </li>
@@ -45,8 +59,66 @@
                     </li>
                     <li>On Click
                         <ul>
-                            <li>A small Intuit tab flashes from the top then disappears once the page is reloaded</li>
-                            <li>When the user taps on the Mailchimp logo, the page automatically refreshes</li>
+                            <li>Opens new page</li>
+                        </ul>
+                    </li>
+                </ul>
+                 <p>Left Chevron Button</p>
+                <ul>
+                    <li>Hover On
+                        <ul>
+                            <li>If on first card, pointer changes to arrow with a no symbol on the bottom. The starting color is a background with light gray with a dark gray arrow.</li>
+                            <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
+                            <li>Cursor changes to finger</li>
+                        </ul>
+                    </li>
+                    <li>Hover Off
+                        <ul>
+                            <li>Button color reverts from a dark gray (#333333) back to black (#121212)</li>
+                            <li>Cursor changes to finger</li>
+                        </ul>
+                    </li>
+                    <li>On Click
+                        <ul>
+                            <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
+                            <li>Cards on the carousel shift to the left </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Right Chevron Button</p>
+                <ul>
+                    <li>Hover On
+                        <ul>
+                             <li>If on last card, pointer changes to arrow with a no symbol on the bottom. The starting color is a background with light gray with a dark gray arrow.</li>
+                            <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
+                            <li>Cursor changes to finger</li>
+                        </ul>
+                    </li>
+                    <li>Hover Off
+                        <ul>
+                            <li>Button color reverts from a dark gray (#333333) back to black (#121212)</li>
+                            <li>Cursor changes to finger</li>
+                        </ul>
+                    </li>
+                    <li>On Click
+                        <ul>
+                           <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
+                            <li>Cards on the carousel shift to the right </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Carousel Scroll Bar</p>
+                <ul>
+                    <li>On drag to the left
+                        <ul>
+                            <li>Cards on the carousel move left </li>
+                             <li>If scrollbar indicator touches the left start: the right chevron button changes to a light gray background with a dark gray arrow</li>
+                        </ul>
+                    </li>
+                    <li>On drag to the right
+                        <ul>
+                             <li>Cards on the carousel move right </li>
+                             <li>If scrollbar indicator touches the right end: the right chevron button changes to a light gray background with a dark gray arrow</li>
                         </ul>
                     </li>
                 </ul>
@@ -91,7 +163,7 @@
      
     </main>
     <footer>
-        <p>IDM241-011 Hannah Pelingon</p>
+        <p>IDM241-001 Hannah Pelingon</p>
     </footer>
 </body>
 </html>
