@@ -19,11 +19,10 @@
     
         <div class="description-container">
               <h2>Triggers</h2>
-                <p>Slider Card</p>
+                <p>Carousel Card</p>
                 <ul>
                     <li>Hover On</li>
                     <li>Hover Off</li>
-                    <li>On Click</li>
                 </ul>
                 <p>Left Chevron Button</p>
                 <ul>
@@ -37,29 +36,30 @@
                     <li>Hover Off</li>
                     <li>On Click</li>
                 </ul>
-                <p>Carousel Scroll Bar</p>
+                <p>Pagination</p>
                 <ul>
-                    <li>On drag</li>
+                    <li>Hover On</li>
+                    <li>Hover Off</li>
+                    <li>On Click </li>
                 </ul>
         </div>
       
         <div class="description-container">
             <h2>Rules</h2>
-            <p>Slider Card</p>
+            <p>Carousel Card</p>
                 <ul>
                     <li>Hover On
                         <ul>
-                            <li>Cursor changes to finger</li>
+                            <li>Card background changes color to a blue (#1459A2)</li>
+                            <li>Text moves slightly to the right</li>
+                            <li>Arrow slides in from the left</li>
                         </ul>
                     </li>
                     <li>Hover Off
                         <ul>
-                            <li>Cursor reverts to pointer</li>
-                        </ul>
-                    </li>
-                    <li>On Click
-                        <ul>
-                            <li>Opens new page</li>
+                            <li>Card background reverts back to white</li>
+                            <li>Text moves slightly to the left, going back to original position</li>
+                            <li>Arrow slides back to the left and hides</li>
                         </ul>
                     </li>
                 </ul>
@@ -67,7 +67,6 @@
                 <ul>
                     <li>Hover On
                         <ul>
-                            <li>If on first card, pointer changes to arrow with a no symbol on the bottom. The starting color is a background with light gray with a dark gray arrow.</li>
                             <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
                             <li>Cursor changes to finger</li>
                         </ul>
@@ -75,13 +74,15 @@
                     <li>Hover Off
                         <ul>
                             <li>Button color reverts from a dark gray (#333333) back to black (#121212)</li>
-                            <li>Cursor changes to finger</li>
+                            <li>Cursor reverts to pointer</li>
                         </ul>
                     </li>
                     <li>On Click
                         <ul>
                             <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
-                            <li>Cards on the carousel shift to the left </li>
+                            <li>Cards on the carousel shift one to the left </li>
+                            <li>Pagination shifts one to the left, unless the starting point is the first card</li>
+                            <li>If the starting point is the second card and the user clicks the left chevron button, the background color changes to a light gray with a dark gray arrow.</li>
                         </ul>
                     </li>
                 </ul>
@@ -89,36 +90,57 @@
                 <ul>
                     <li>Hover On
                         <ul>
-                             <li>If on last card, pointer changes to arrow with a no symbol on the bottom. The starting color is a background with light gray with a dark gray arrow.</li>
-                            <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
+                           <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
                             <li>Cursor changes to finger</li>
                         </ul>
                     </li>
                     <li>Hover Off
                         <ul>
                             <li>Button color reverts from a dark gray (#333333) back to black (#121212)</li>
-                            <li>Cursor changes to finger</li>
+                            <li>Cursor reverts to pointer</li>
                         </ul>
                     </li>
                     <li>On Click
                         <ul>
                            <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
-                            <li>Cards on the carousel shift to the right </li>
+                            <li>Cards on the carousel shift one to the right </li>
+                            <li>Pagination shifts one to the right, unless the starting point is the last card</li>
+                            <li>If the starting point is the third card and the user clicks the right button, the background color changes to a light gray with a dark gray arrow.</li>
                         </ul>
                     </li>
                 </ul>
-                <p>Carousel Scroll Bar</p>
+                <p>Pagination</p>
                 <ul>
-                    <li>On drag to the left
+                    <li>Hover On White Dots
                         <ul>
-                            <li>Cards on the carousel move left </li>
-                             <li>If scrollbar indicator touches the left start: the right chevron button changes to a light gray background with a dark gray arrow</li>
+                            <li>Cursor changes to finger</li>
                         </ul>
                     </li>
-                    <li>On drag to the right
+                    <li>Hover Off White Dots
                         <ul>
-                             <li>Cards on the carousel move right </li>
-                             <li>If scrollbar indicator touches the right end: the right chevron button changes to a light gray background with a dark gray arrow</li>
+                            <li>Cursor reverts to pointer</li>
+                        </ul>
+                    </li>
+                    <li>On Click White Dots to the Right
+                        <ul>
+                            <li>Card carousel moves to the respective set of cards to the right</li>
+                        </ul>
+                    </li>
+                     <li>On Clicking the Last White Dot
+                        <ul>
+                            <li>Card carousel shifts the last set of cards</li>
+                            <li>The background color of the right chevron button changes to a light gray with a dark gray arrow.</li>
+                        </ul>
+                    </li>
+                    <li>On Clicking White Dots to the Left
+                        <ul>
+                            <li>Card carousel shifts to the respective set of cards to the left</li>
+                        </ul>
+                    </li>
+                     <li>On Clicking the First White Dot
+                        <ul>
+                            <li>Card carousel shifts the first set of cards</li>
+                            <li>The background color of the right chevron button changes to a light gray with a dark gray arrow.</li>
                         </ul>
                     </li>
                 </ul>
@@ -126,21 +148,20 @@
 
         <div class="description-container">
             <h2>Feedback</h2>
-            <p>Slider Card</p>
+            <p>Carousel Card</p>
                 <ul>
                     <li>Hover On
                         <ul>
-                            <li>Cursor changes to finger</li>
+                            <li>Card background changes color to a blue (#1459A2)</li>
+                            <li>Text moves slightly to the right</li>
+                            <li>Arrow slides in from the left</li>
                         </ul>
                     </li>
                     <li>Hover Off
                         <ul>
-                            <li>Cursor reverts to pointer</li>
-                        </ul>
-                    </li>
-                    <li>On Click
-                        <ul>
-                            <li>Opens new page</li>
+                            <li>Card background reverts back to white</li>
+                            <li>Text moves slightly to the left, going back to original position</li>
+                            <li>Arrow slides back to the left and hides</li>
                         </ul>
                     </li>
                 </ul>
@@ -148,7 +169,6 @@
                 <ul>
                     <li>Hover On
                         <ul>
-                            <li>If on first card, pointer changes to arrow with a no symbol on the bottom. The starting color is a background with light gray with a dark gray arrow.</li>
                             <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
                             <li>Cursor changes to finger</li>
                         </ul>
@@ -156,13 +176,15 @@
                     <li>Hover Off
                         <ul>
                             <li>Button color reverts from a dark gray (#333333) back to black (#121212)</li>
-                            <li>Cursor changes to finger</li>
+                            <li>Cursor reverts to pointer</li>
                         </ul>
                     </li>
                     <li>On Click
                         <ul>
                             <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
-                            <li>Cards on the carousel shift to the left </li>
+                            <li>Cards on the carousel shift one to the left </li>
+                            <li>Pagination shifts one to the left, unless the starting point is the first card</li>
+                            <li>If the starting point is the second card and the user clicks the left chevron button, the background color changes to a light gray with a dark gray arrow.</li>
                         </ul>
                     </li>
                 </ul>
@@ -170,36 +192,57 @@
                 <ul>
                     <li>Hover On
                         <ul>
-                             <li>If on last card, pointer changes to arrow with a no symbol on the bottom. The starting color is a background with light gray with a dark gray arrow.</li>
-                            <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
+                           <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
                             <li>Cursor changes to finger</li>
                         </ul>
                     </li>
                     <li>Hover Off
                         <ul>
                             <li>Button color reverts from a dark gray (#333333) back to black (#121212)</li>
-                            <li>Cursor changes to finger</li>
+                            <li>Cursor reverts to pointer</li>
                         </ul>
                     </li>
                     <li>On Click
                         <ul>
                            <li>Button color changes from black (#121212) to a dark gray (#333333)</li>
-                            <li>Cards on the carousel shift to the right </li>
+                            <li>Cards on the carousel shift one to the right </li>
+                            <li>Pagination shifts one to the right, unless the starting point is the last card</li>
+                            <li>If the starting point is the third card and the user clicks the right button, the background color changes to a light gray with a dark gray arrow.</li>
                         </ul>
                     </li>
                 </ul>
-                <p>Carousel Scroll Bar</p>
+                <p>Pagination</p>
                 <ul>
-                    <li>On drag to the left
+                    <li>Hover On White Dots
                         <ul>
-                            <li>Cards on the carousel move left </li>
-                             <li>If scrollbar indicator touches the left start: the right chevron button changes to a light gray background with a dark gray arrow</li>
+                            <li>Cursor changes to finger</li>
                         </ul>
                     </li>
-                    <li>On drag to the right
+                    <li>Hover Off White Dots
                         <ul>
-                             <li>Cards on the carousel move right </li>
-                             <li>If scrollbar indicator touches the right end: the right chevron button changes to a light gray background with a dark gray arrow</li>
+                            <li>Cursor reverts to pointer</li>
+                        </ul>
+                    </li>
+                    <li>On Click White Dots to the Right
+                        <ul>
+                            <li>Card carousel moves to the respective set of cards to the right</li>
+                        </ul>
+                    </li>
+                     <li>On Clicking the Last White Dot
+                        <ul>
+                            <li>Card carousel shifts the last set of cards</li>
+                            <li>The background color of the right chevron button changes to a light gray with a dark gray arrow.</li>
+                        </ul>
+                    </li>
+                    <li>On Clicking White Dots to the Left
+                        <ul>
+                            <li>Card carousel shifts to the respective set of cards to the left</li>
+                        </ul>
+                    </li>
+                     <li>On Clicking the First White Dot
+                        <ul>
+                            <li>Card carousel shifts the first set of cards</li>
+                            <li>The background color of the right chevron button changes to a light gray with a dark gray arrow.</li>
                         </ul>
                     </li>
                 </ul>
