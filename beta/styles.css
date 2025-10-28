@@ -58,6 +58,10 @@ a {
     color: #1E1A14;
 }
 
+a:visited {
+    color: #551a8b;
+}
+
 p {
     font-weight: bold;
 }
