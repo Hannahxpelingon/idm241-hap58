@@ -46,9 +46,9 @@ const track = document.getElementById('carouselTrack');
             
             let offset;
             if (currentIndex >= maxIndex) {
-                // Calculate total width of all cards
+                
                 const totalWidth = (totalCards * cardWidth) + (gap * (totalCards - 1));
-                // Align the last cards to the right edge
+                
                 offset = totalWidth - containerWidth;
             } else {
                 offset = currentIndex * (cardWidth + gap);
@@ -108,7 +108,6 @@ const track = document.getElementById('carouselTrack');
             }, 150);
         });
 
-        // Initialize
         updateCardsToShow();
         createPagination();
         updateCarousel();
