@@ -151,7 +151,7 @@ footer {
             flex: 1;
             position: relative;
             padding-top: 50px;
-            max-width: 100%;
+            max-width: 970px;
         }
 
         .carousel-container {
