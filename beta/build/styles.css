@@ -353,6 +353,7 @@ footer {
         @media (max-width: 1200px) {
             .section {
                 padding: 60px 40px;
+                width: 1220px;
             }
 
             .content-wrapper {
