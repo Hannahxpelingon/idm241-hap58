@@ -235,6 +235,10 @@ footer p {
     align-items: flex-start;
 }
 
+.card-content:hover {
+    cursor: pointer;
+}
+
 .arrow {
     position: absolute;
     left: -30px;
