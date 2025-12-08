@@ -1,6 +1,6 @@
 @font-face {
     font-family: Noto Sans;
-    src: url(fonts/NotoSans-Regular.woff2) format('woff2');
+    src: url(/final/build/fonts/NotoSans-Regular.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: Noto Sans;
-    src: url(fonts/NotoSans-SemiBold.woff2) format('woff2');
+    src: url(/final/fonts/NotoSans-SemiBold.woff2) format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: Noto Sans;
-    src: url(fonts/NotoSans-Bold.woff2) format('woff2');
+    src: url(/final/fonts/NotoSans-Bold.woff2) format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -211,6 +211,7 @@ footer p {
 
 .card:hover {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
 }
 
 .card-image {
@@ -236,7 +237,7 @@ footer p {
 }
 
 .card-content:hover {
-    cursor: pointer;
+    cursor: default;
 }
 
 .arrow {
@@ -321,6 +322,12 @@ footer p {
         opacity: 1;
         transform: translateY(0);
     }
+
+    .card:hover .read-more-btn {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 
     .read-more-btn:hover {
         background: #818181;
