@@ -385,15 +385,21 @@ footer p {
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-bottom: 6px;
     font-size: 22px;
     line-height: 1;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 400;
     -webkit-appearance: none;
     appearance: none;
+}
+
+.nav-button.prev {
+    padding-right: 9px;
+}
+
+.nav-button.next {
+    padding-left: 8px;
 }
 
 .nav-button.prev,
@@ -573,12 +579,9 @@ footer p {
 
     .controls {
         flex-direction: row;
-        width: 92%;
+        width: 100%;
         gap: 24px;
-    }
-
-    .nav-buttons {
-        margin-left: auto;
+        align-items: center;
     }
 
     .nav-button {
@@ -594,6 +597,10 @@ footer p {
 
     .dot.active {
         width: 32px;
+    }
+
+    .pagination {
+        flex: 1; 
     }
 }
 
