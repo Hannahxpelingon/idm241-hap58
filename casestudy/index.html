@@ -11,181 +11,180 @@
     <header>
          <p>Case Study</p>
     </header>
+    <img class="hero-image" src="assets/hero-image.png" alt="Ikea Card Carousel">
     <div class="main-title">
-        <h1>Case Study</h1>
+        <h1>Case Study: IKEA Card Carousel Microinteraction</h1>
+        <p>Hannah Pelingon</p>
     </div>
-    <img class="hero-image" src="" alt="">
 
     <main>
-        <div class="content-container">
-            <h2>Overview</h2>
-            <p>Microinteractions are small, yet impactful moments integrated in interfaces that shape users&apos; experience and their overall behavior when interacting with the product. This case study concentrates on redesigning a complex microinteraction within an existing interface. The project showcases how micro interaction design can clarify user intent, reduce friction, and create an engaging experience. Through detailed breakdowns of the triggers, rules, feedback, loops and modes, this study highlights how one small design consists of many parts to elevate the overall user journey.</p>
-
-        </div>
-
-        <div class="content-container">
-            <h2>Context and challenge</h2>
-            <div class="sub-content-container">
-                <h3>Background and Project Objective</h3>
-                    <p>Create and code a complex micro interaction that includes 5 triggers</p>
+            <div class="content-container">
+                <h2>Overview</h2>
+                <p>Microinteractions are small, yet impactful moments integrated in interfaces that shape users&apos; experience and their overall behavior when interacting with the product. This case study concentrates on redesigning a complex microinteraction within an existing interface. The project showcases how micro interaction design can clarify user intent, reduce friction, and create an engaging experience. Through detailed breakdowns of the triggers, rules, feedback, loops and modes, this study highlights how one small design consists of many parts to elevate the overall user journey.</p>
             </div>
-            <div class="sub-content-container">
-                <h3>Description</h3>
-                    <p>For this case study, I chose to redesign an IKEA card carousel. Figure 1.1 showcases its current state. The current design features a horizontal, draggable bar, and. arrow controls to move the cards left and right.</p>
-            </div>
-            <div class="sub-content-container">
-                <h3>Goal</h3>
-                    <p>My initial goal was to make the card clearly feel clickable. Originally, the only cue was the cursor changing to a pointer on hover, which wasn&apos;t strong enough to signal interactivity. I also wanted to replace the draggable crossbar with clearer pagination to help users understand which set of cards they were viewing.
-                    </p>
-            </div>
-
-        </div>
-
-        <div class="content-container">
-            <h2>Design Process</h2>
-
-            <div class="sub-content-container">
-                <h3>Identifying microinteration opportunity</h3>
-                <p>The design process began by analyzing the existing state of the IKEA carousel. This initial audit helped me identify where improvements could be made for a more intuitive experience.</p>
-            </div>
-
-            <div class="sub-content-container">
-                <h3>Protoyping</h3>
-                <p>I began by prototyping in Figma to determine the structure of the carousel, which include the following:</p>
-                <ul>
-                    <li>card size and estimated space (subject to change due to responsiveness in code)</li>
-                    <li>position of navigation arrows</li>
-                    <li>placement of pagination dots</li>
-                    <li>hierarchy of text and images</li>
-                    <li>applying IKEA&apos;s branding</li>
-                    <li>creating interactive components</li>
-                </ul>
-                <p>the high fidelity prototypes gave a visual preview of how the carousel would look and feel, providing a foundational plan before coding.</p>
-            </div>
-            <div class="sub-content-container">
-                <h3>Iteration of the Design</h3>
-                <p>The project progressed through two main iterations: a beta version that implemented four core triggers, and a final version that expanded the design into a complete, complex microinteraction with all five triggers.</p>
-
-                <div class="iteration-description">
-                    <h4>Beta Iteration and Changes</h4>
-                    <p>The beta iteration showcased the following changes reflected on the first prototype:</p>
-                    <ul>
-                    <li>Carousel card: On hover on, the card shifts to a blue state while an arrow smoothly slides in from the left, subtly pushing the text to the right and signaling interactivity. On hover off, the blue background disappears, the arrow shifts back to the left and disappears, and the text shifts back to it's original position.</li>
-                    <li>Clickable dots were added to give users clearer control over which set of cards is displayed.</li>
-                    <li>Left and right chevron arrows: The chevron buttons maintained as the main navigation, allowing users to move sequentially through the cards.</li>
-                </ul>
+            <div class="content-container">
+                <h2>Context and challenge</h2>
+                <div class="sub-content-container">
+                    <h3>Background and Project Objective</h3>
+                        <p>Create and code a complex micro interaction that includes 5 triggers</p>
                 </div>
-                  <div class="iteration-description">
-                    <h4>Final Iteration and Changes</h4>
-                    <p>To complete the final complex microinteraction of five triggers, a “Read More” button was added.</p>
-                    <ul>
-                    <li>Read More button: When hovered, the button transitions in color from back to gray and on hover off, the color reverts from gray to black. This creates a clear signal that it is an actionable element.</li>
-                </ul>
+                <div class="sub-content-container">
+                    <h3>Description</h3>
+                        <img class="support-image" src="assets/current-ikea.png" alt="current IKEA card carousel">
+                        <p>For this case study, I chose to redesign an IKEA card carousel. The image above showcases its current state. The current design features a horizontal, draggable bar, and arrow controls to move the cards left and right.</p>
+                </div>
+                <div class="sub-content-container">
+                    <h3>Goal</h3>
+                        <p>My initial goal was to make the card clearly feel clickable. Originally, the only cue was the cursor changing to a pointer on hover, which wasn&apos;t strong enough to signal interactivity. I also wanted to replace the draggable crossbar with clearer pagination to help users understand which set of cards they were viewing.
+                        </p>
                 </div>
             </div>
-
-        </div>
-
-        <div class="content-container">
-            <h2>Code/Dev</h2>
-            <p>The development stage involved translate the Figma protoype into a fully functional carousel using HTML, CSS, and Javascript for both iterations. I implemented hover states, slide animations, pagination behavior, and the new “Read More” button through a combination of CSS transitions and JavaScript event handling. A challenge occured when Chrome was causing arrows to disappear due to the layout. This was resolved through targeting styling adjustments. The final build delivered the final iteration that ensures that the microinteractions match the intended prototype design.</p>
-        </div>
-
-        <div class="content-container">
+            <div class="content-container">
+                <h2>Design Process</h2>
+                <div class="sub-content-container">
+                    <h3>Identifying microinteration opportunity</h3>
+                    <p>The design process began by analyzing the existing state of the IKEA carousel. This initial audit helped me identify where improvements could be made for a more intuitive experience.</p>
+                </div>
+                <div class="sub-content-container">
+                    <h3>Protoyping</h3>
+                    <img class="support-image" src="assets/ikea-prototype.png" alt="figma prototype of ikea card carousel">
+                    <p>I began by prototyping in Figma to determine the structure of the carousel, which include the following:</p>
+                    <ul>
+                        <li>card size and estimated space (subject to change due to responsiveness in code)</li>
+                        <li>position of navigation arrows</li>
+                        <li>placement of pagination dots</li>
+                        <li>hierarchy of text and images</li>
+                        <li>applying IKEA&apos;s branding</li>
+                        <li>creating interactive components</li>
+                    </ul>
+                    <p>the high fidelity prototypes gave a visual preview of how the carousel would look and feel, providing a foundational plan before coding.</p>
+                </div>
+                <div class="sub-content-container">
+                    <h3>Iteration of the Design</h3>
+                    <p>The project progressed through two main iterations: a beta version that implemented four core triggers, and a final version that expanded the design into a complete, complex microinteraction with all five triggers.</p>
+                    <div class="iteration-description">
+                        <h4>Beta Iteration and Changes</h4>
+                        <img class="support-image" src="assets/beta-iteration.png" alt="beta iteration of ikea card carousel">
+                        <p>The beta iteration showcased the following changes reflected on the first prototype:</p>
+                        <ul>
+                        <li>Carousel card: On hover on, the card shifts to a blue state while an arrow smoothly slides in from the left, subtly pushing the text to the right and signaling interactivity. On hover off, the blue background disappears, the arrow shifts back to the left and disappears, and the text shifts back to it's original position.</li>
+                        <li>Clickable dots were added to give users clearer control over which set of cards is displayed.</li>
+                        <li>Left and right chevron arrows: The chevron buttons maintained as the main navigation, allowing users to move sequentially through the cards.</li>
+                    </ul>
+                    </div>
+                      <div class="iteration-description">
+                        <h4>Final Iteration and Changes</h4>
+                        <img class="support-image" src="assets/hero-image.png" alt="final iteration of ikea card carousel, read more button added">
+                        <p>To complete the final complex microinteraction of five triggers, a “Read More” button was added and the following changes were made:</p>
+                        <ul>
+                        <li>Read More button: When hovered, the button transitions in color from back to gray and on hover off, the color reverts from gray to black. This creates a clear signal that it is an actionable element.</li>
+                        <li>Alignment of buttons to the edge of where the cards end</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container">
+                <h2>Code/Dev</h2>
+                <p>The development stage involved translate the Figma protoype into a fully functional carousel using HTML, CSS, and Javascript for both iterations. I implemented hover states, slide animations, pagination behavior, and the new “Read More” button through a combination of CSS transitions and JavaScript event handling. A challenge occured when Chrome was causing arrows to disappear due to the layout. This was resolved through targeting styling adjustments. The final build delivered the final iteration that ensures that the microinteractions match the intended prototype design.</p>
+            </div>
+            <div class="content-container">
             
-            <h2>The Solution</h2>
-
+                <h2>The Solution</h2>
+        
              <section class="section">
-        <div class="container">
-            <div class="content-wrapper">
-                <div class="text-content">
-                    <h1>A peek behind the scenes</h1>
-                    <p>From the forests, to the factories, to our very own test labs, we invite you to take a look at how we design and develop for a better everyday.</p>
-                </div>
-
-                <div class="carousel-section">
-                    <div class="carousel-container">
-                        <div class="carousel-track" id="carouselTrack">
-                            <div class="card">
-                                <img src="assets/kitchen.jpg" alt="Kitchen interior with painted surfaces" class="card-image">
-                                <div class="card-content">
-                                    <div class="arrow">→</div>
-                                    <div class="text-wrapper">
-                                        <div class="subtitle">Production development at IKEA</div>
-                                        <div class="title">Paint innovation is on a roll</div>
-                                         <button class="read-more-btn">Read More</button>
-                                    </div>
-                                </div>
+                    <div class="container">
+                        <div class="content-wrapper">
+                            <div class="text-content">
+                                <h1>A peek behind the scenes</h1>
+                                <p>From the forests, to the factories, to our very own test labs, we invite you to take a look at how we design and develop for a better everyday.</p>
                             </div>
 
-                            <div class="card">
-                                <img src="assets/kidsroom.jpg" alt="Colorful kidsroom" class="card-image">
-                                <div class="card-content">
-                                    <div class="arrow">→</div>
-                                    <div class="text-wrapper">
-                                        <div class="subtitle">Mass Balance at IKEA</div>
-                                        <div class="title">A step towards renewable materials in plastic</div>
-                                        <button class="read-more-btn">Read More</button>
+                            <div class="carousel-section">
+                                <div class="carousel-container">
+                                    <div class="carousel-track" id="carouselTrack">
+                                        <div class="card">
+                                            <img src="assets/kitchen.jpg" alt="Kitchen interior with painted surfaces" class="card-image">
+                                            <div class="card-content">
+                                                <div class="arrow">→</div>
+                                                <div class="text-wrapper">
+                                                    <div class="subtitle">Production development at IKEA</div>
+                                                    <div class="title">Paint innovation is on a roll</div>
+                                                    <button class="read-more-btn">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <img src="assets/kidsroom.jpg" alt="Colorful kidsroom" class="card-image">
+                                            <div class="card-content">
+                                                <div class="arrow">→</div>
+                                                <div class="text-wrapper">
+                                                    <div class="subtitle">Mass Balance at IKEA</div>
+                                                    <div class="title">A step towards renewable materials in plastic</div>
+                                                    <button class="read-more-btn">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <img src="assets/livingroom.jpg" alt="IVAR storage livingroom" class="card-image">
+                                            <div class="card-content">
+                                                <div class="arrow">→</div>
+                                                <div class="text-wrapper">
+                                                    <div class="subtitle">Behind the scenes with IVAR</div>
+                                                    <div class="title">Meeting an icon</div>
+                                                    <button class="read-more-btn">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <img src="assets/bathroom.jpg" alt="Colorful blue bathroom" class="card-image">
+                                            <div class="card-content">
+                                                <div class="arrow">→</div>
+                                                <div class="text-wrapper">
+                                                    <div class="subtitle">Water innovation at IKEA</div>
+                                                    <div class="title">Finding the perfect flow</div><button class="read-more-btn">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <img src="assets/bedroom.jpg" alt="Cozy bedroom" class="card-image">
+                                            <div class="card-content">
+                                                <div class="arrow">→</div>
+                                                <div class="text-wrapper">
+                                                    <div class="subtitle">IKEA home smart</div>
+                                                    <div class="title">Sleep smartly</div>
+                                                    <button class="read-more-btn">Read More</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="card">
-                                <img src="assets/livingroom.jpg" alt="IVAR storage livingroom" class="card-image">
-                                <div class="card-content">
-                                    <div class="arrow">→</div>
-                                    <div class="text-wrapper">
-                                        <div class="subtitle">Behind the scenes with IVAR</div>
-                                        <div class="title">Meeting an icon</div>
-                                        <button class="read-more-btn">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <img src="assets/bathroom.jpg" alt="Colorful blue bathroom" class="card-image">
-                                <div class="card-content">
-                                    <div class="arrow">→</div>
-                                    <div class="text-wrapper">
-                                        <div class="subtitle">Water innovation at IKEA</div>
-                                        <div class="title">Finding the perfect flow</div><button class="read-more-btn">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <img src="assets/bedroom.jpg" alt="Cozy bedroom" class="card-image">
-                                <div class="card-content">
-                                    <div class="arrow">→</div>
-                                    <div class="text-wrapper">
-                                        <div class="subtitle">IKEA home smart</div>
-                                        <div class="title">Sleep smartly</div>
-                                        <button class="read-more-btn">Read More</button>
+                                <div class="controls">
+                                    <div class="pagination" id="pagination"></div>
+                                    <div class="nav-buttons">
+                                        <button class="nav-button prev" id="prevBtn" aria-label="Previous cards">‹</button>
+                                        <button class="nav-button next" id="nextBtn" aria-label="Next cards">›</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+             </section>
 
-                    <div class="controls">
-                        <div class="pagination" id="pagination"></div>
-                        <div class="nav-buttons">
-                            <button class="nav-button prev" id="prevBtn" aria-label="Previous cards">‹</button>
-                            <button class="nav-button next" id="nextBtn" aria-label="Next cards">›</button>
+
+            
+                <p>The final solution is a fully coded-out IKEA card carousel that showcases refined micro interactions. The carousel&apos;s UX changes focus on integrating a clear and intuitive navigation where users can move through the cards using arrows and pagination dots, receive immediate visual feedback through hover states, background color changes, and the added “Read More” button. Across both the beta and final iterations, I also learned how to accurately document and describe how the interactions perform with complete breakdowns of triggers, rules, feedback, loops and modes. With each iteration, I became more precise in identifying when and what had changed.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-            <p>The final solution is a fully coded-out IKEA card carousel that showcases refined micro interactions. The carousel&apos;s UX changes focus on integrating a clear and intuitive navigation where users can move through the cards using arrows and pagination dots, receive immediate visual feedback through hover states, background color changes, and the added “Read More” button. Across both the beta and final iterations, I also learned how to accurately document and describe how the interactions perform with complete breakdowns of triggers, rules, feedback, loops and modes. With each iteration, I became more precise in identifying when and what had changed.</p>
-        </div>
-
-        <div class="content-container">
-            <h2>The Results</h2>
-            From start to finish, the project ended in a fully functional complex microinteraction that met my initial goals of providing feedback and clarity for the users. One notable challenge occurred during the beta build, when the navigation arrows would disappear in the Chrome browser due to its layout rendering. By debugging the component structure and refining the CSS for the responsiveness, I was able to resolve the issue. Reflecting on the process. I learned the value of iterative design and accuracy in documentation descriptions, especially in defining triggers, feedback, loops, and modes. In the future, I would like to ensure more time for browser testing and ensure that the code is viable across all platforms. Thanks to this project, I learned the importance and practiced the delivery of a detail-focused approach to micro interaction design.
-        </div>
+                
+                        <div class="content-container">
+                            <h2>The Results</h2>
+                            From start to finish, the project ended in a fully functional complex microinteraction that met my initial goals of providing feedback and clarity for the users. One notable challenge occurred during the beta build, when the navigation arrows would disappear in the Chrome browser due to its layout rendering. By debugging the component structure and refining the CSS for the responsiveness, I was able to resolve the issue. Reflecting on the process. I learned the value of iterative design and accuracy in documentation descriptions, especially in defining triggers, feedback, loops, and modes. In the future, I would like to ensure more time for browser testing and ensure that the code is viable across all platforms. Thanks to this project, I learned the importance and practiced the delivery of a detail-focused approach to micro interaction design.
+                        </div>
+            
     </main>
 
     <footer>
